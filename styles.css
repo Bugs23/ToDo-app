@@ -1,0 +1,150 @@
+/* Basic Style */
+body {
+  background: #fff;
+  color: #808285;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  background-color: #F9F9F9;
+  display: block;
+  overflow: hidden;
+  width: 475px;
+  margin: 100px auto 0;
+  border: 1px solid #00007F;
+  border-radius: 3%;
+}
+
+.form {
+  margin: 0 35px 35px; 
+}
+
+header {
+  background-color: #339999;
+  height: 100%;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 20px 0 0 35px;
+  color: #FFF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+
+input, button {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: 0px;
+  color: #00007F;
+  font-size: 15px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #00B8C3;
+}
+
+/* Heading */
+h3,
+label[for='new-task'] {
+  color: #00007F;
+  font-weight: 400;
+  font-size: 1.3em;
+  border-bottom: 4px solid #00007F;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 30px;
+  font-family: Lato, sans-serif;
+  color: #808285;
+}
+
+/* New Task */
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+input#new-task {
+  float: left;
+  width: 318px;
+}
+
+p > button:hover {
+  color: #0FC57C;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+li >  input[type="text"] {
+  width: 226px;
+}
+
+li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Completed */
+#completed-tasks label {
+  color: #888;
+  
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
